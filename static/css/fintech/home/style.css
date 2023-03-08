@@ -1,0 +1,432 @@
+/* #### Standard Features ####  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+/*    border: 1px solid red;*/
+}
+
+html , body {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;
+    align-items: center;*/
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar_main {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10vh;
+
+
+}
+
+.navbar_line {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    margin-left: 9vw;
+    width: 80vw;
+    height: 0.1vh;
+    background-color: #F1C232;
+}
+
+.company_monogram {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10vw;
+}
+
+.fa-paper-plane {
+    display: flex;
+    flex-direction: row;
+    transform:  scale(1.25);
+    border: transparent Black;
+    border-radius: 0.5vw;
+    color: #F1C232;
+    padding-top: 0.3vw;
+    padding-left: 0.1vw;
+    padding-right: 0.4vw;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.fa-paper-plane:hover {
+    display: flex;
+    flex-direction: row;
+    transform: scale(1.25);
+    border: transparent Black;
+    color: #F1C232;
+    border-radius: 0.5vw;
+    background-color: grey;
+    padding-left: 0.1vw;
+    padding-right: 0.4vw;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+
+}
+
+.company_name {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.5vw;
+    font-family: Helvetica;
+    font-weight: bolder;
+    font-size: 2.5vh;
+
+}
+
+.company_home {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15.5vw;
+    font-family: Helvetica;
+    border: transparent #F1C232;
+    border-radius: 0.5vw;
+    font-weight: bolder;
+    font-size: 2.5vh;
+    padding: 0.3vw;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    text-decoration:underline;
+    text-underline-offset: 1.5vh;
+    text-decoration-color: #F1C232;
+    text-decoration-thickness: 0.5vh;
+}
+
+.company_home:hover {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15.5vw;
+    font-family: Helvetica;
+    border: transparent #F1C232;
+    border-radius: 0.5vw;
+    font-weight: bolder;
+    font-size: 2.5vh;
+    color: grey;
+    background-color: #F1C232;
+    cursor: pointer;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    text-decoration:underline;
+    text-underline-offset: 0vh;
+    text-decoration-color: #F1C232;
+    text-decoration-thickness: 0vh;
+}
+
+.company_about {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5.5vw;
+    font-family: Helvetica;
+    border: transparent #F1C232;
+    border-radius: 0.5vw;
+    font-weight: bolder;
+    font-size: 2.5vh;
+    padding: 0.3vw;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.company_about:hover {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5.5vw;
+    font-family: Helvetica;
+    border: transparent #F1C232;
+    border-radius: 0.5vw;
+    font-weight: bolder;
+    font-size: 2.5vh;
+    padding: 0.3vw;
+    color: grey;
+    background-color: #F1C232;
+    cursor: pointer;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.company_contact {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5.5vw;
+    font-family: Helvetica;
+    border: transparent #F1C232;
+    border-radius: 0.5vw;
+    font-weight: bolder;
+    font-size: 2.5vh;
+    padding: 0.3vw;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.company_contact:hover {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5.5vw;
+    font-family: Helvetica;
+    border: transparent #F1C232;
+    border-radius: 0.5vw;
+    font-weight: bolder;
+    font-size: 2.5vh;
+    padding: 0.3vw;
+    color: grey;
+    background-color: #F1C232;
+    cursor: pointer;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    margin-left: 8.5vw;
+    padding: 0.3vw;
+    border: transparent #F1C232;
+    border-radius: 0.8vw;
+    background-color: #F1C232;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+
+.login:hover {
+    display: flex;
+    flex-direction: row;
+    margin-left: 8.5vw;
+    padding: 0.3vw;
+    border: transparent #F1C232;
+    border-radius: 0.8vw;
+    color: #F1C232;
+    background-color: grey;
+    cursor: pointer;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.fa-user {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.5vw;
+    margin-right: 0;
+    width: 2vw;
+
+}
+
+.company_login {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0.5vw;
+    margin-left: 0;
+    font-family: Helvetica;
+    font-weight: bolder;
+    font-size: 2.5vh;
+}
+
+.body_main {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.background_shape {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    width: 80vw;
+    height: 60vh;
+    transform: skew(0deg);
+    background-color: rgba(232,232,232,0.5);
+    border: transparent #E8E8E8;
+    z-index: 1;
+    border-radius: 1vw 0 0 1vw;
+    padding: 0;
+}
+
+.body_main_content {
+    display: flex;
+    flex-direction: row;
+}
+
+.body_main_content img {
+    position: relative;
+    top: 5vh;
+    left: 10vw;
+    z-index: 0;
+}
+
+.body_main_words {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    opacity: 100%;
+    top: 40vh;
+    left: 50vw;
+}
+
+.body_main_heading {
+    display: flex;
+    flex-direction: row;
+    font-family: Helvetica;
+    font-weight: bolder;
+    color:  #383838;
+    text-decoration:underline;
+    text-underline-offset: 1.5vh;
+    text-decoration-color: #F1C232;
+    text-decoration-thickness: 1.5vh;
+}
+
+
+.body_main_paragraph {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5vh;
+    padding-top: 3vh;
+    padding-right: 6vw;
+    font-family: Helvetica;
+    font-weight: bolder;
+    font-size: 4vh;
+    text-align: justify;
+    opacity: 50%;
+}
+
+.getstarted_button {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    margin-left: 15vw;
+    height: 5vh;
+    width: 10vw;
+    border: transparent;
+    border-radius: 1.5vw;
+    background-color: #F1C232;
+    justify-content: center;
+    padding-top: 1vh;
+    font-family: Helvetica;
+    font-weight: bolder;
+    font-size: 2.5vh;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.getstarted_button:hover {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    margin-left: 15vw;
+    height: 5vh;
+    width: 10vw;
+    border: transparent;
+    border-radius: 1.5vw;
+    background-color: grey;
+    color: #F1C232;
+    justify-content: center;
+    padding-top: 1vh;
+    font-family: Helvetica;
+    font-weight: bolder;
+    font-size: 2.5vh;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    margin-top: -5vh;
+    font-size: 2.5vh;
+    font-family: Helvetica;
+    font-weight: bolder;
+    color: grey;
+}
+
+.body_socials {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5vh;
+}
+
+
+.fa-brands {
+    margin: 1.5vw;
+}
+
+.fa-facebook {
+    display: flex;
+    flex-direction: row;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    color: #F1C232;
+
+}
+
+.fa-facebook:hover {
+    display: flex;
+    flex-direction: row;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    color: #F1C232;
+    background-color: grey;
+    border-radius: 2.5vw;
+    padding: 0.1vw;
+
+}
+
+.fa-twitter {
+    display: flex;
+    flex-direction: row;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    color: #F1C232;
+}
+
+.fa-twitter:hover {
+    display: flex;
+    flex-direction: row;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    color: #F1C232;
+    background-color: grey;
+    padding: 0.1vw;
+    border-radius: 1.5vw;
+
+}
+
+.fa-instagram {
+    display: flex;
+    flex-direction: row;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    color: #F1C232;
+}
+
+.fa-instagram:hover {
+    display: flex;
+    flex-direction: row;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    color: #F1C232;
+    background-color: grey;
+    padding: 0.1vw;
+    border-radius: 1.5vw;
+
+}

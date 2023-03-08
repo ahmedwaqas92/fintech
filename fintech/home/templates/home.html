@@ -1,0 +1,24 @@
+{% extends "fintech_navbar.html" %}
+
+
+{% block body %}
+<div class="body_main">
+	<div class="body_main_content">
+		<img class="animate__animated animate__backInLeft" src="{{url_for('static', filename='/images/fintech/home/fintechLanding.png')}}"/>
+		<div class="animate__animated animate__fadeInUp body_main_words">
+			<h1 class="body_main_heading">FINTECH ENGINEERING</h1>
+			<p class="body_main_paragraph">" Enjoy the most affordable value added services in the dommain of precision engineering & automated manufacturing. Get Started to receive our best price "</p>
+			<button class="getstarted_button">Get Started</button>
+		</div>
+	</div>
+	<div class="animate__animated animate__backInRight background_shape"></div>
+</div>
+<div class="animate__animated animate__fadeInUp footer">
+	<p class="find_us_at">Or Connect with Us at</p>
+	<div class="body_socials">
+		<i class="fa-brands fa-facebook"></i>
+		<i class="fa-brands fa-twitter"></i>
+		<i class="fa-brands fa-instagram"></i>
+	</div>
+</div>
+{% endblock body %}

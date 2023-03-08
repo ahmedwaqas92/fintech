@@ -1,0 +1,22 @@
+{% extends "home_base.html" %}
+
+
+{% block title %}Fintech Engineering{% endblock %}
+
+{% block navbar %}
+<div class="animate__animated animate__fadeInDown navbar_main">
+	<div class="company_monogram">
+		<i class="fa-solid fa-paper-plane"></i>
+		<p class="company_name">FINTECH ENGINEERING</p>
+	</div>
+	<p class="company_home" onclick="window.location.href='{{url_for('fintech_home.landing')}}'">HOME</p>
+	<p class="company_about">ABOUT US</p>
+	<p class="company_contact">CONTACT US</p>
+	<div class="login">
+		<i class="fa-solid fa-user"></i>
+		<p class="company_login">Login</p>
+	</div>
+</div>
+<div class="navbar_line"></div>
+{% block body %}{% endblock body %}
+{% endblock navbar %}
