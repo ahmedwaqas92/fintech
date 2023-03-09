@@ -23,6 +23,15 @@ def home():
 	return render_template("home.html")
 
 
-@fintech_home.route("/tempabout")
-def aboutus():
-	return redirect(url_for('fintech_about.about'))
+@fintech_home.route("/tempaboutus")
+def tempaboutus():
+	return redirect(url_for('fintech_aboutus.aboutus'))
+
+
+@fintech_home.route("/tempcontactus")
+def tempcontactus():
+	return redirect(url_for("fintech_contactus.contactus"))
+
+# @fintech_home.route("/templogin")
+# def templogin():
+# 	return redirect(url_for("fintech_login.login"))

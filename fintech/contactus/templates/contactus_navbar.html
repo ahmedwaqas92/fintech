@@ -1,4 +1,4 @@
-{% extends "home_base.html" %}
+{% extends "contactus_base.html" %}
 
 
 {% block title %}Fintech Engineering{% endblock %}
@@ -9,10 +9,10 @@
 		<i class="fa-solid fa-paper-plane"></i>
 		<p class="company_name">FINTECH ENGINEERING</p>
 	</div>
-	<p class="company_home" onclick="window.location.href='{{url_for('fintech_home.landing')}}'">HOME</p>
-	<p class="company_about" onclick="window.location.href='{{url_for('fintech_home.tempaboutus')}}'">ABOUT US</p>
-	<p class="company_contact" onclick="window.location.href='{{url_for('fintech_home.tempcontactus')}}'">CONTACT US</p>
-	<div class="login" >
+	<p class="company_home" onclick="window.location.href='{{url_for('fintech_contactus.temphome')}}'">HOME</p>
+	<p class="company_about" onclick="window.location.href='{{url_for('fintech_contactus.tempaboutus')}}'">ABOUT US</p>
+	<p class="company_contact" onclick="window.location.href='{{url_for('fintech_contactus.contactus')}}'">CONTACT US</p>
+	<div class="login">
 		<i class="fa-solid fa-user"></i>
 		<p class="company_login">Login</p>
 	</div>
